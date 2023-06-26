@@ -8,7 +8,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
             System.out.println("Введите имя файла целиком или частично:\n");
             String file = sc.nextLine();
-            File path = new File("C:/");
+            System.out.println("Введите на каком диске хотите искать в формате *Имя диска*:/");
+            String pathName = sc.nextLine();
+            File path = new File(pathName);
             FileSearch fileSearch = new FileSearch(file, path);
     }
 }
