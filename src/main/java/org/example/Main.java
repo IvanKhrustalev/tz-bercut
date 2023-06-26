@@ -1,12 +1,14 @@
 package org.example;
 
 import java.io.File;
-import java.util.concurrent.ExecutionException;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException, ExecutionException {
-        String file = "xus";
-        File path = new File("D:/");
-        FileSearch fileSearch = new FileSearch(file, path);
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+            System.out.println("Введите имя файла целиком или частично:\n");
+            String file = sc.nextLine();
+            File path = new File("C:/");
+            FileSearch fileSearch = new FileSearch(file, path);
     }
 }
